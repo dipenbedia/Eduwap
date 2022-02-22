@@ -1,0 +1,41 @@
+@charset 'utf-8';
+
+
+
+input:focus{
+	box-shadow: none !important;
+}
+.crediantial-div{
+	width: 500px;
+	
+	position: fixed;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+.nav-tabs{
+	border: none !important;
+
+}
+.nav-link.active{
+	border: none !important;
+	background: #C82333 !important;
+	color: #fff !important;
+}
+.nav-link{
+	color: #C82333 !important;
+}
+
+@media(max-width: 425px)
+{
+	.crediantial-div{
+		width: 100%;
+	}
+	.alert-box{
+		width: 100%;
+	}
+}

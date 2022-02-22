@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/bootstrap.css">
+	<link rel="stylesheet" href="style/animate.css">
+	<link rel="stylesheet" href="style/css/all.css">
+	
+	<title>Document</title>
+	<script src="script/jquery.min.js"></script>
+	<script src="script/popper.min.js"></script>
+	<script src="script/bootstrap.js"></script>
+	<script src="script/script.js"></script>
+</head>
+<body>
+	<div class="alert-box position-fixed w-50" style='top:5px;right:5px'></div>
+	<div class="crediantial-div px-5 py-3 shadow-sm overflow-hidden">
+		
+		<ul class="nav nav-pills justify-content-center">
+			<li class="nav-item"><a href="#login" class="nav-link active" data-toggle="tab">Login</a></li>
+			<li class="nav-item"><a href="#signup" class="nav-link" data-toggle="tab">Signup</a></li>
+		</ul>
+		<div class="tab-content mt-5">
+			<div id="login" class="tab-pane active">
+				
+				<form class="animated slideInLeft login-form">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-danger border-danger text-light rounded-0">
+								<i class="fa fa-user"></i>
+							</span>
+						</div>
+						<input type="text" name="username" class="form-control border-danger rounded-0 username" placeholder="username" required='required'>
+					</div>
+
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-danger border-danger rounded-0 text-light">
+								<i class="fa fa-lock"></i>
+							</span>
+						</div>
+						<input type="password" name="password" class="form-control rounded-0 border-danger login-password" placeholder="password" required='required'>
+					</div>
+					<div class="custom-switch custom-control float-left">
+						
+						<input type="checkbox" class="custom-control-input" id="remember">
+						<label for="remember" class="custom-control-label">Remember me</label>
+					</div>
+
+					<button class="btn btn-danger float-right rounded-0">Login</button>
+				</form>
+			</div>
+
+			<!--start signup coding-->
+			<div id="signup" class="tab-pane">
+				
+				<form class="animated slideInRight signup-form">
+					<div class="row mb-3">
+						<div class="col-md-6">
+							<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-danger border-danger text-light rounded-0">
+								<i class="fa fa-user"></i>
+							</span>
+						</div>
+						<input type="text" name="firstname" placeholder="Firstname" class="form-control border-danger rounded-0 firstname">
+					</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input-group">
+								<input type="text" name="lastname" placeholder="Lastname" class="form-control border-danger rounded-0 lastname">
+
+						<div class="input-group-append">
+							<span class="input-group-text bg-danger border-danger text-light rounded-0">
+								<i class="fa fa-user"></i>
+							</span>
+						</div>
+							</div>
+						
+						</div>
+					</div>
+
+
+					<div class="row mb-3">
+						<div class="col-12">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text bg-danger border-danger rounded-0">
+										<i class="fa fa-mobile text-light"></i>
+									</span>
+								</div>
+
+								<input type="number" name="mobile-one" class="form-control border-danger rounded-0 mobile-one" placeholder='Mobile'>
+
+								<input type="number" name="mobile-two" class="form-control border-danger rounded-0 mobile-two" placeholder="Alt mobile">
+							</div>
+
+							
+						</div>
+					</div>
+					<div class="row mb-3">
+						
+						<div class="col-md-12">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text bg-danger text-light rounded-0 border-danger">
+										<i class="fa fa-home"></i>
+									</span>
+								</div>
+								<input type="text" name='shopname' class='form-control shop-name border-danger rounded-0' placeholder='Shop name'>
+							</div>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text bg-danger border-danger rounded-0 text-light">
+										<i class="fa fa-envelope"></i>
+									</span>
+								</div>
+
+								<input type="email" name="email" placeholder="Email" class="form-control border-danger rounded-0 email">
+							</div>
+
+					<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-danger border-danger rounded-0">
+									<i class="fa fa-lock text-light"></i>
+								</span>
+							</div>
+						<input type="password" name="password" placeholder="Password" class="form-control rounded-0 border-danger password">
+					</div>
+
+					<button class="btn btn-danger text-light rounded-0 float-right">SIGN UP</button>
+					
+				</form>
+				
+			</div>
+			<!--end signup coding-->
+		</div>
+	</div>
+
+	
+</body>
+</html>
